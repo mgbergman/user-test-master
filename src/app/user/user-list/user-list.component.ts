@@ -13,6 +13,7 @@ import { Route } from '@angular/compiler/src/core';
 export class UserListComponent implements OnInit {
 
   users: User[] = [];
+  searchCriteria: string = "";
   tableStyle : string = "table table-sm";
 
   constructor(

@@ -12,6 +12,7 @@ import { UserCreateComponent } from './user/user-create/user-create.component';
 import { VendorEditComponent } from './vendor/vendor-edit/vendor-edit.component';
 import { BoolDisplayPipe } from './pipes/bool-display.pipe';
 import { PasswordPipe } from './pipes/password.pipe';
+import { UserSearchPipe } from './user/user-search.pipe';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PasswordPipe } from './pipes/password.pipe';
     UserCreateComponent,
     VendorEditComponent,
     BoolDisplayPipe,
-    PasswordPipe
+    PasswordPipe,
+    UserSearchPipe
   ],
   imports: [
     BrowserModule,

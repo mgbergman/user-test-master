@@ -1,3 +1,7 @@
+<div class= "angular-component">
+<div class="h3">User List |
+    <input [(ngModel)]="searchCriteria" type = "text" placeholder="Search">
+</div>
 <table class="table table-sm">
     <tr>
     <th>Id</th>
@@ -13,7 +17,7 @@
 
     </tr>
     
-    <tr *ngFor="let user of users" >
+    <tr *ngFor="let user of users | userSearch:searchCriteria" >
       <td>{{ user.id}}</td>
       <td>{{ user.userName}}</td>
       <td>{{ user.password | password}}</td>
