@@ -17,8 +17,8 @@
       <td>{{ user.firstName}} {{ user.lastName}}   </td>
       <td>{{ user.phoneNumber}}</td>
       <td>{{ user.email}}</td>
-      <td>{{ user.isAdmin ? "Yes" : "No"}}</td>
-      <td>{{ user.isReviewer ? "Yes" : "No"}}</td>
+      <td>{{ user.isAdmin | bool}}</td>
+      <td>{{ user.isReviewer | bool: "fr"}}</td>
       <td>
           <a routerLink="/users/edit/{{user.id}}">Edit</a>
       </td>
