@@ -2,6 +2,8 @@
     <tr>
     <th>Id</th>
     <th>User Name</th>
+    <th>Password</th>
+
     <th>Full Name</th>
     <th>Phone Number</th>
     <th>Email</th>
@@ -14,6 +16,7 @@
     <tr *ngFor="let user of users" >
       <td>{{ user.id}}</td>
       <td>{{ user.userName}}</td>
+      <td>{{ user.password | password}}</td>
       <td>{{ user.firstName}} {{ user.lastName}}   </td>
       <td>{{ user.phoneNumber}}</td>
       <td>{{ user.email}}</td>
